@@ -1,0 +1,15 @@
+<div class="profile_card">
+    <h1>{{profile.name}}</h1>
+    <h2>{{profile.designation}}</h2>
+    <h2>{{profile.skills}}</h2>
+    <button (click)="showContactDetails()">Show Contact</button>
+    <div *ngIf="profile.contact.length > 0"> 
+        Contact:
+        <div *ngFor="let item of profile.contact">
+        <p>{{item}}</p>
+    </div>
+    </div>
+</div>
+
+<!-- Directives
+    - *ngFor -->
