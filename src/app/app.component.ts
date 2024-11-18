@@ -20,3 +20,6 @@ export class AppComponent {
   ];
  }
 }
+
+// Two way data binding
+//   - Banana in a box syntax [()]

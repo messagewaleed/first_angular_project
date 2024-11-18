@@ -14,6 +14,8 @@ export class ProfileComponent {
 
   @Input("profile") theProfile !: Profile;
 
+  @Input('value') value : string = "Default Value";
+
   //profile : any;
 
   constructor(){
@@ -30,3 +32,6 @@ export class ProfileComponent {
     }
 
 }
+
+// Making Rest API calls from Angular
+// - HttpClient

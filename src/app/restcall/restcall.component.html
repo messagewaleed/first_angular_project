@@ -1,0 +1,11 @@
+<div>
+    <input type="text" placeholder="GitHub Username" [(ngModel)]="userName">
+    <button (click)="searchUserOnGitHub()">Search User on GitHub</button>
+</div>
+<div *ngIf="responseData">
+    Details:
+    <img src={{responseData.avatar_url}} height="200" width="200" alt="Image of user on github">
+    <p>Name :  {{responseData.name}}</p>
+    <p>Followers : {{responseData.followers}}</p>
+    <p>Following : {{responseData.following}}</p>
+</div>
