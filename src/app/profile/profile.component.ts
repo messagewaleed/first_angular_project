@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Profile } from '../Profile';
 
 @Component({
   selector: 'profile',
@@ -7,21 +8,20 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  // @Input('userName') userName !: string;
 
-  profile : any;
+  // @Input('designation') designation !: string;
+
+  @Input("profile") theProfile !: Profile;
+
+  //profile : any;
 
   constructor(){
-    this.profile = {
-      name : 'Akshay',
-      designation : 'Software Engineer',
-      skills : 'HTML, CSS, JS, React',
-      contact : [
-        '9999-788-999',
-        '6767-909-888',
-        'akshay@socgen.com',
-        'akshay@gmail.com'
-      ]
-    }
+    
+  }
+
+  ngOnInit(){
+    
   }
 
   showContactDetails() {

@@ -1,11 +1,11 @@
 <div class="profile_card">
-    <h1>{{profile.name}}</h1>
-    <h2>{{profile.designation}}</h2>
-    <h2>{{profile.skills}}</h2>
+    <h1>{{theProfile.name}}</h1>
+    <h2>{{theProfile.designation}}</h2>
+    <h2>{{theProfile.skills}}</h2>
     <button (click)="showContactDetails()">Show Contact</button>
-    <div *ngIf="profile.contact.length > 0"> 
+    <div *ngIf="theProfile.contact.length > 0"> 
         Contact:
-        <div *ngFor="let item of profile.contact">
+        <div *ngFor="let item of theProfile.contact">
         <p>{{item}}</p>
     </div>
     </div>
